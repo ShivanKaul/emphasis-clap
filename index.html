@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Emphasis 👏 Clap 👏 </title>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- JS -->
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<!-- Checks: no emoji, min + max length -->
+
+<body>
+    <div id="container">
+        <div class="cmp">
+            <p id="input">
+                <form onsubmit="emphasize(); return false;">
+                    Enter sentence to emphasize (only alphanumeric characters):
+                    <br>
+                    <input id="inputtext" size="140" type="text" pattern="[A-Za-z0-9?!\s]+" autofocus="true" minlength="1" maxlength="140" placeholder="This is an example" name="input">
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </p>
+        </div>
+        <div class="cmp">
+            <p id="output">
+                <p id="outputtext"></p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
