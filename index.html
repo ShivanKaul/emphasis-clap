@@ -19,10 +19,11 @@
         <div class="cmp">
             <p id="input">
                 <form onsubmit="emphasize(); return false;">
-                    Enter sentence to emphasize (only alphanumeric characters):
+                    Enter sentence (with spaces) to emphasize (only alphanumeric characters + minor punctuation):
                     <br>
-                    <input id="inputtext" size="140" type="text" pattern="[A-Za-z0-9?!\s]+" autofocus="true" minlength="1" maxlength="140" placeholder="This is an example" name="input">
-                    <br><br>
+                    <input id="inputtext" size="140" type="text" pattern="[A-Za-z0-9?!.\s]+" autofocus="true" minlength="1" maxlength="140" placeholder="This is an example" name="input">
+                    <br>
+                    <br>
                     <input type="submit" value="Submit">
                 </form>
             </p>
